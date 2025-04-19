@@ -10,14 +10,11 @@ spring:
     name: multitenancy
 
   jpa:
-    hibernate:
-      ddl-auto: update
     show-sql: true
     properties:
       hibernate:
         dialect: org.hibernate.dialect.PostgreSQLDialect
         multiTenancy: DATABASE
-        hbm2ddl.auto: update
 
   datasource:
     tenant1:
@@ -27,6 +24,11 @@ spring:
       driver-class-name: org.postgresql.Driver
     tenant2:
       url: jdbc:postgresql://localhost:5433/customer2db
+      username: admin
+      password: root
+      driver-class-name: org.postgresql.Driver
+    tenant3:
+      url: jdbc:postgresql://localhost:5433/customer3db
       username: admin
       password: root
       driver-class-name: org.postgresql.Driver
