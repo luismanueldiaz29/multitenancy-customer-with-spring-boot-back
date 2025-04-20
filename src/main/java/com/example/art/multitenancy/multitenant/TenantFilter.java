@@ -1,7 +1,6 @@
 package com.example.art.multitenancy.multitenant;
 
 
-import com.example.art.multitenancy.exceptions.TenantException;
 import jakarta.servlet.*;
 import jakarta.servlet.http.HttpServletRequest;
 import lombok.extern.slf4j.Slf4j;

@@ -34,8 +34,8 @@ import static org.hibernate.cfg.MultiTenancySettings.MULTI_TENANT_IDENTIFIER_RES
 })
 @EnableJpaRepositories(basePackages = JpaConfig.COM_EXAMPLE_ART_MULTITENANCY_REPOSITORIES)
 public class JpaConfig {
-    public static final String COM_EXAMPLE_ART_MULTITENANCY_ENTITIES = "com.example.art.multitenancy.entities";
-    public static final String COM_EXAMPLE_ART_MULTITENANCY_REPOSITORIES = "com.example.art.multitenancy.repositories";
+    public static final String COM_EXAMPLE_ART_MULTITENANCY_ENTITIES = "com.example.art.multitenancy.entities"; //packages donde se crean las entidades
+    public static final String COM_EXAMPLE_ART_MULTITENANCY_REPOSITORIES = "com.example.art.multitenancy.repositories"; //packages donde se crean los repositorios de jpa
 
     @Bean
     public LocalContainerEntityManagerFactoryBean entityManagerFactory(

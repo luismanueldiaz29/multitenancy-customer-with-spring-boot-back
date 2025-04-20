@@ -1,6 +1,5 @@
 package com.example.art.multitenancy.multitenant;
 
-import com.example.art.multitenancy.exceptions.TenantException;
 import lombok.extern.slf4j.Slf4j;
 import org.hibernate.engine.jdbc.connections.spi.MultiTenantConnectionProvider;
 import org.hibernate.service.spi.Stoppable;

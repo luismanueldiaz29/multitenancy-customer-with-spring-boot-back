@@ -1,6 +1,6 @@
 package com.example.art.multitenancy.handler;
 
-import com.example.art.multitenancy.exceptions.TenantException;
+import com.example.art.multitenancy.multitenant.TenantException;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.ExceptionHandler;
